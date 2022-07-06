@@ -1,0 +1,34 @@
+h4{
+    padding: 2% 0 0 0;
+}
+
+.logos{
+    background-color: #F0e3ca;
+    text-align: center;
+}
+
+.parceiros-todos{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px;
+}
+
+.parceiros{
+    width: 130px;
+    height: 130px;
+}
+
+@media (max-width:800px){
+    .parceiros{
+        width: 90px;
+    }
+
+    .parceiros-todos{
+        display: flex;
+    }
+
+    h4{
+        font-size: 14px;
+        margin: 3%;
+    }
+}

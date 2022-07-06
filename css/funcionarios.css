@@ -1,0 +1,93 @@
+.sec-funcionarios{
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 990px;
+    margin: 0 auto;
+}
+
+.sec-funcionarios2{
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.funcionarios-titulo{
+    padding: 3%;
+}
+
+.funcionarios{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 35px 40px;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.589);
+}
+
+.funcionarios:hover{
+    transform: translateY(5px);
+    cursor: pointer;
+}
+ 
+.funcionarios .usuario{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    margin-bottom: 15px;
+}
+
+
+.funcionario-texto{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.cassia{
+    border-top: 4px solid lightseagreen;
+}
+
+.daiana{
+    border-top: 4px solid blue;
+}
+
+.eduarda{
+    border-top: 4px solid purple;
+}
+
+.guilherme{
+    border-top: 4px solid green;
+}
+
+.larissa{
+    border-top: 4px solid fuchsia;
+}
+
+.lilian{
+    border-top: 4px solid black;
+}
+
+.otavio{
+    border-top: 4px solid red;
+}
+
+
+@media (max-width:800px){
+    .sec-funcionarios{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        max-width: 400px;
+    }
+
+    .sec-funcionarios2{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        max-width: 400px;
+    }
+}
+

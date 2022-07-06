@@ -1,0 +1,133 @@
+.bio{
+    display: grid;
+    grid-template-areas:
+        "paragrafo-titulo bioUltimo-titulo"
+        "paragrafo  bioUltimo";
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px 25px;
+    margin: 5% 15px 0 15px;
+}
+
+.sobre-h1{
+    font-size: 50px;
+    text-align: center;
+}
+
+.paragrafo-titulo{
+    color: #a35709;
+    font-size: 30px;
+    grid-area: paragrafo-titulo;
+    text-align: center;
+}
+
+.bioUltimo-titulo{
+    color: #a35709;
+    font-size: 30px;
+    grid-area: bioUltimo-titulo;
+    text-align: center;
+}
+
+.paragrafo{
+    font-size: 20px;
+    grid-area: paragrafo;
+    text-align: justify;
+}
+
+.bioUltimo{
+    font-size: 20px;
+    grid-area: bioUltimo;
+    text-align: justify;
+}
+
+.foto{
+    border-radius: 16%;
+    height: 20%;
+    margin: 0 0 0 20px;
+    width: 20%;
+}
+
+.logo{
+    border-radius: 5%;
+    height: 60%;
+    width: 60%;
+}
+
+.mvv{
+    display: flex;
+}
+
+.card2 {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0 rgba(50, 50, 50, 0.63);
+    height: 250px;
+    padding: 20px;
+    margin: 20px;
+    width: 350px;
+    transition: all 0,9s ease-out;
+}
+
+.card2:hover{
+    transform: translateY(5px);
+    cursor: pointer;
+}
+
+.alvo{
+    background-color: white;
+    border-left: 3px solid red;
+    grid-area: alvo;
+}
+
+.visao{
+    background-color: white;
+    border-left: 3px solid red;
+    grid-area: visao;
+    
+}
+
+.valores{
+    background-color: white;
+    border-left: 3px solid red;
+    grid-area: valores;
+}
+
+@media (max-width:800px) {
+
+    .paragrafo-titulo{
+        margin-top: 5%;
+    }
+    
+    .bioUltimo-titulo{
+        display: none;
+    }
+
+    .bioUltimo{
+        display: none;
+    }
+
+    .paragrafo{
+        display: contents;
+    }
+
+    .bio{
+        display: block;
+    }
+
+    h1{
+        text-align: center;
+    }
+    
+    h3.comentarios{
+        text-align: center;
+    }
+
+    .mvv{
+        flex-wrap: wrap;   
+        justify-content: center;
+    }
+
+    .row{
+        width: 100%;
+    }
+    
+}

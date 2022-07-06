@@ -1,0 +1,35 @@
+body{
+    margin: 10 10 10 10;
+    background-color: #F0E3CA;
+}
+
+.textao{
+    font-size: 15px;
+    text-align: justify;
+}
+
+.myButton {
+	box-shadow:inset 0px 1px 3px 0px #91b8b3;
+	background: #ff8303;
+	background-color: #A35709;
+	border-radius:5px;
+	border:1px solid #A35709;
+	display:inline-block;
+	cursor:pointer;
+	color:black;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:11px 23px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #A35709;
+    align-items: center;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #6c7c7c 5%, #768d87 100%);
+	background-color:#A35709;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}

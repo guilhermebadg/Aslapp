@@ -1,0 +1,81 @@
+body{
+   margin: 0;
+    background-position: center;
+    font-family: 'Poppins', sans-serif;
+    background-image: url(../fotos/sala.jfif);
+    background-repeat: no-repeat;
+    background-size: 260vh;
+}
+
+.formulario-container{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.input{
+    border: 0;
+    background-color: white;
+    width: 50vh;
+}
+
+.boxh1{
+ font-weight: 500;
+ color: white;
+}
+
+.box-todo{
+    box-shadow: 0 8px 32px 0 beige( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5.5px );
+    -webkit-backdrop-filter: blur( 5.5px );
+    border-radius: 10px;
+    border: 1px solid white(0, 0, 0, 0.18);
+    height: 50%;
+    width: 600px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(15px) saturate(180%);
+    -webkit-backdrop-filter: blur(15px) saturate(180%);
+    background-color: rgba(139, 87, 42, 0.9);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+
+}
+
+.myButton {
+	box-shadow:inset 1px 0px 1px 0px #fce2c1;
+	background:linear-gradient(to bottom, #ffc477 5%, #fb9e25 100%);
+	background-color:#ffc477;
+	border-radius:10px;
+	border:2px solid #eeb44f;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:10px 27px;
+	text-decoration:none;
+	text-shadow:0px -1px 1px #cc9f52;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #fb9e25 5%, #ffc477 100%);
+	background-color:#fb9e25;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+.termo{
+    font-size: 12px;
+}
+@media(max-width:800px){
+    .formulario-container{
+        display: flex;
+    }
+
+    .myButton{
+        display: flex;
+    
+    }
+}

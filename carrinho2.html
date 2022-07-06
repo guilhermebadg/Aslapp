@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CARRINHO DE COMPRAS</title>
+  <link rel="stylesheet" href="css/carrinhodecompras.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+
+   <div class="containercarrinho">
+
+      <main class="maincarrinho">
+        <div class="titulocarrinho">
+<h1>Meu Carrinho</h1>
+ <a class="" href="combos.html"> CONTINUAR COMPRANDO </a> 
+
+
+</div>
+ <hr>
+ <div class="produtos">
+  <img class="combo1" src="fotos/comboclassico.png" alt="">
+  <h2>COMBO CLÁSSICOS
+    <div class="texto">Aproveite os grandes sucessos de bilheteria que se tornaram inesquecíveis e atemporais por várias gerações.</div>
+    <div>
+      <input id="Adicionar" type="button" value="+">
+      <input id="Exemplo" type="text" readonly value="1">
+      <input id="Remover" type="button" value="-">
+      <button id="adicionar" onclick="multiplicar()">ADICIONAR</button>
+  
+    </div>
+  </h2>
+ </div>
+
+ <label class="chamadacardapio"> Deseja adquirir o nosso combo "Cardápio SNACK BAR"?<br />
+  <select class="form-group" name="cardapio" id="cardapio" onchange="mostraCampo(this.value);">
+    <option value="sim">Sim</option>
+    <option value="não">Não</option>
+  </select>
+
+  <div class="cardapio">
+    <img class="cardapiosnackbar" src="fotos/bannercardapiosnackbar.jpg" alt="">
+    <div class="textocardapio">O assinante Aslapp poderá desfrutar da experiência completa de estar em uma sala de cinema com o sabor único dos nossos snacks queridinhos pelo público.</div>
+   </div>
+
+ <hr>
+
+
+
+ <h5>
+<img class="etiqueta" src="fotos/etiqueta.png" alt=""> INSIRA O SEU CUPOM DE DESCONTO
+  <input>
+  <button class="botaoadd">adicionar</button>
+</h5>
+<hr>
+
+
+
+ 
+      </main>
+
+
+        <aside class="asidecarrinho">
+
+
+          <h1>Resumo do pedido</h1>
+          <hr>
+          <div class="cart--totalitem subtotal">
+            <b><span>Subtotal</span><b>
+            <b></b><span id="SubTotal">R$ 12,90/mês</span></b>
+          </div>
+
+      <br>
+
+          <div class="cart-totalitem desconto">
+            <b><span>Desconto (-10%)</span></b>
+            <span id="Desconto">R$</span>
+          </div>
+      
+          <hr>
+          <div class="cart--totalitem total big">
+            <b><span>Total</span>
+            <span id="Total"></span>
+          </div>
+      
+          <br>
+      <center><button class="botaocompra" onclick="comprar ()"> <img class="sacola" src="fotos/sacolas-de-compras.png" alt=""> <b>COMPRAR</b></button></center>
+
+
+        </div>
+        </aside>
+ 
+    </div>
+
+<script src="js/carrinho2.js"></script>
+
+</body>
+</html>

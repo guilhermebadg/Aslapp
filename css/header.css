@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #F0e3ca;
+}
+
+body::-webkit-scrollbar{
+    width: 10px;
+}
+
+body::-webkit-scroll-track{
+    background: #A35709;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: #A35709;
+    border-radius: 10px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+}
+
+.bg-light{
+    background-color: #A35709!important;
+    transition-property: all;
+}
+
+.container{
+    margin: 0 5px 0 5px;
+}
+
+.cabecalho{
+    width: 80px;
+    height: 80px;
+}
+
+.navbar>.container{
+    width: 150px;
+}
+
+.lista{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+
+.lista .lista-menu{
+    padding-left: 25px;
+    list-style-type: none;
+    color: white;
+}
+
+.lista .lista-menu:hover{
+    color: #1b1a17;
+}
+
+.dropbtn {
+    background-color: #A35709;
+    color: white;
+    padding: 0;
+    border: 1px solid transparent;
+}
+
+.dropbtn:hover{
+    background-color: #A35709;
+    color: black;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #A35709;
+    min-width: 100px;
+}
+  
+.dropdown-content a {
+    color: white;
+    padding: 1%;
+    display: block;
+}
+  
+.dropdown-content a:hover {
+    background-color:#F0e3ca;
+    color: black;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.avatar{
+    width: 40px;
+    height: 40px;
+}
+
+.animationrodaSpinner{
+    transition-duration: 1s;
+    transition-delay: 0s;
+    transition-property:all;
+    transition: border-radius 1s transform 2s ease-in;
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.animationrodaSpinner{
+    transform: translate(-120px);
+    opacity: 0.8;
+    
+}
+
+@keyframes rotate{
+    from {transform: rotateZ(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+.animationlogoSpinner{
+    animation: rotate 1s ease;
+}
+
+
+@media (max-width:800px){
+    .navbar{
+        width: 100%;
+    }
+    
+    .lista{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .navbar .container{
+        padding: 0;
+        margin: 0;
+        width: 65px;
+    }
+
+    .navbar-brand{
+        display: none;
+    }
+
+    .lista .lista-menu{
+        padding: 2px;
+    }
+}

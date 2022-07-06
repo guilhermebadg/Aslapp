@@ -1,0 +1,24 @@
+h1{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+    color: black;
+    text-shadow: -0.1em 0.1em 0.2em #a35709;
+}
+
+
+h2{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 200;
+    color: black;
+    text-shadow: -0.1em 0.1em 0.2em #a35709;
+}
+
+.box{
+    margin: 0 0 10% 0;
+}

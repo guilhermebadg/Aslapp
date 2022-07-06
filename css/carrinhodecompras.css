@@ -1,0 +1,135 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f0e3ca;
+  font-family: Poppins, sans-serif;
+}
+
+.containercarrinho{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 100vh;
+}
+
+.produtos{
+    display: flex;
+}
+
+.maincarrinho{
+    background-color: #f0e3ca;
+    padding: 10px;
+}
+
+.botaoexcluir{
+    height: 20px;
+    width: 20px;
+}
+
+.combo1{
+    width: 20%;
+    padding: 10px;
+}
+
+.titulocarrinho{
+    display: flex;
+    gap: 50%;
+}
+
+.asidecarrinho{
+    background-color: #a35709;
+    padding: 10px;
+}
+
+.sacola{
+    width: 30px;
+}
+
+.etiqueta{
+    width: 15px;
+}
+
+.botaoadd{
+    width: 100px;
+    background-color: #ff8303;
+    color: black;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.botaocompra{
+    width: 300px;
+    background-color: #ff8303;
+    color: black;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.asidecarrinho, .cart--totalitem subtotal, .cart-totalitem desconto, .cart--totalitem total big{
+  color: black;
+  font-size: larger;
+}
+
+#Exemplo{
+  border: none;
+  width: 20px;
+  text-align: center;
+  background-color: #f0e3ca;
+}
+
+.botaotransparente{
+    background-color: transparent;
+    border: none;
+}
+
+.cardapiosnackbar{
+    width: 20%;
+    border-left: 20%;
+}
+
+.chamadacardapio{
+    font-weight: 800;
+}
+
+.cardapio{
+    display: flex;
+}
+
+.textocardapio{
+    margin-left: 3%;
+}
+
+
+@media(max-width: 800px){
+    .titulocarrinho{
+        display: flex;
+        flex-wrap: wrap;
+    }
+   
+    .containercarrinho{
+        display: flex;
+        flex-wrap: wrap;
+   }
+
+   .combo1{
+    width: 70%;
+    height: 70%;
+   }
+
+   .texto{
+    font-size: 14px;
+   }
+
+   .cardapiosnackbar{
+    width: 50%;
+    height: 50%;
+   }
+
+   .asidecarrinho{
+    width: 100vh;
+   }
+
+}

@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #000000;
+}
+
+.faqsection{
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    background-image: url(../fotos/faqbanner.png);
+    background-size: cover;
+    height: 70vh;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.faqtitulo{
+  font-weight: 900;
+  font-size: 250%;
+}
+
+.comentariosquestoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.questoesfrequentes{
+    font-weight: 600;
+}
+
+.subtitulo{
+    font-weight: 500;
+}
+
+.comentarioslogo{
+    width: 70px;
+}
+
+.logo{
+    text-align: left;
+}
+
+.inputfaq{
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background-color: black;
+    color: white;
+    border: 2px solid;
+    width: 35%;
+    height: 11%;
+}
+
+.botaoinputfaq{
+    background-color: orange;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-weight: 800;
+    border: none;
+    padding: 10px;
+    width: 15%;
+    height: 10%;
+    padding-bottom: 2%;
+    cursor: pointer;
+}
+
+.botaoinputfaq:hover{
+    background-color: transparent;
+    color: orange;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logoduvidas{
+    width: 20%;
+    align-items: center;
+    margin-left: 5%;
+}
+
+.subtitulo{
+    color: white;
+    margin-left: 15px;
+}
+
+
+.boxfaq{
+    background-color: #e9cf9f;
+    color: black;
+    border: solid 1px white;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    font-weight: 200;
+    width: 50%;
+    height: 70px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    margin-left: 25%;
+}
+
+.perguntafaq{
+   width: 200%;
+   font-size: medium;
+   text-align: center;
+   margin-left: 18%;
+}
+
+.respostafaq{
+    color: white;
+    font-weight: 500;
+    text-align: justify;
+    font-size: medium;
+    width: 50%;
+    margin-left: 25%;
+}
+
+.imagembotao{
+    width: 15%;
+    margin-right: 10px;
+}
+
+.botao{
+   text-align: end;
+}
+
+.logoperguntas{
+    width: 6%;
+    margin-left: 2%;
+}
+
+.cartaologo{
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    margin-left: 10;
+}
+
+.imagemcartao{
+    width: 10%;
+}
+
+.sessaoaviso{
+    box-sizing: border-box;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.chamadaaside{
+    color: white;
+}
+
+.chamadaaside2{
+    color: orangered;
+}
+
+.chamadaaside, .chamadaaside2{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    line-height: 1.2;
+}
+
+form{
+    align-items: flex-start;
+    align-items: flex-start;
+    margin-left: 30%;
+    margin-right: 30%;
+    font-size: 1.125rem;
+}
+
+form label, form input, form textarea, form button{
+    display: block;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+form label{
+    color: white;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+
+form input, form textarea{
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    transition: border-color, box-shadow 0.2s;
+}
+
+form textarea{
+    min-height: 13rem;
+    resize: vertical;
+    font-family: 'Poppins', sans-serif;
+}
+
+form input:hover, form input:focus, form textarea:hover, form textarea:focus{
+     outline: none;
+     border-color: gray;
+}
+
+form button{
+    display: block;
+    padding: 1rem;
+    background-color: orange;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+    font-weight: 700;
+    width: 90%;
+}
+
+form button:hover{
+    outline: none;
+    background-color: transparent;
+    color: orange;
+}
+
+@media (max-width:800px) {
+ 
+
+    .faqsection{
+        height: 40vh;
+    }
+
+    .inputfaq{
+        width: 45%;
+    }
+
+    .botaoinputfaq{
+        width: 40%;
+    }
+
+    .subtitulo{
+        font-size: medium;
+        text-align: center;
+    }
+
+    .boxfaq{
+        width: 95%;
+        margin-left: 0;
+    }
+
+    .perguntafaq{
+        font-size: small;
+        margin-left: 20%;
+    }
+
+    .respostafaq{
+        font-size: small;
+        text-align: justify;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .chamadaaside, .chamadaaside2{
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: xx-large
+    }
+
+    form{
+        width: 90%;
+        margin-left: 5%;
+        font-size: small;
+    }
+
+    .sessaoaviso{
+    min-height: 100%;
+    }
+
+    form input{
+    padding: 0.4rem;
+    margin-bottom: 0.8rem;
+    }
+
+}

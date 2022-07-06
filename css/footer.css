@@ -1,0 +1,108 @@
+.cadastre-se{
+    background-color: #A35709;
+    color: white;
+    display: flow-root;
+    font-size: 25px;
+    text-align: center;
+    padding: 2% 2%;
+}
+
+.cadastro{
+    background-color: #ba7026;
+    border-radius: 5%;
+    border: transparent;
+    color: white ;
+    padding: 8px;
+    margin: 0 0 0 5%;
+}
+
+.cadastro:hover{
+    background-color: white;
+    color: #ff8303;
+    border: white;
+}
+
+.footer{
+    background-image: url(../fotos/footer.jpeg);
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.aslapp{
+    display: flex;
+    justify-content: center;
+}
+
+.redes-sociais{
+    display: flex;
+    justify-content: space-around;
+    padding: 2%;
+    list-style: none;
+}
+
+h5{
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    display: flex;
+}
+
+hr{
+    background-color: white;
+    margin: 0 5% 2% 5%;
+    opacity: 60%;
+    width: 85%;
+}
+
+.redes{
+    height: 70px;
+    padding: 3%;
+    width: 70px;
+}
+
+.conteudo{
+    display: flex;
+    justify-content: space-around;
+}
+
+a:hover{
+    color: #a35709;
+    text-decoration: none;
+}
+
+.logo1{
+    width: 80px;
+    height: 80px;
+}
+
+.copyrigth{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media(max-width:800px) {
+    footer{
+        width: 100%;
+    }
+
+    .redes-sociais{
+        display: flex;
+    }
+
+    .conteudo{
+        display: flex;
+    }
+
+    .sociais{
+        display: none;
+    }
+
+    .programacao{
+        display: none;
+    }
+}

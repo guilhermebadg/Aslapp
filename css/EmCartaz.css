@@ -1,0 +1,136 @@
+aside{
+    background: black;
+    font-family: 'Poppins', sans-serif;
+}
+ 
+h1{
+    color: white;
+    font: bold;
+    padding: 5% 0 0 0;
+    text-align: center;
+}
+ 
+h2{
+    color: #1b1a17;
+    font-style: oblique;
+    font-size: 16px;
+    font: bold;
+    text-align: center;
+}
+ 
+hr{
+    background-color: white;
+}
+ 
+span{
+    color: #1b1a17;
+    font-size: 12px;
+    text-align: center;
+    text-align: justify;
+}
+ 
+ #Filmes{
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     flex-wrap: wrap;
+     padding: 50px;
+     padding-bottom: 8%;
+ }
+ 
+ .card {
+     transition: 0.5s;
+ }
+ 
+ .imgbx{
+     position: absolute;
+ }
+ 
+ #Filmes .card{
+     max-width: 325px;
+     height: 210px;
+     background: #f0e3ca;
+     margin: 30px 10px;
+     padding: 20px;
+     box-shadow: 0 5px 150px rgba(0, 0, 0, 0.5);
+ }
+ 
+ #Filmes .card:hover{
+     height: 650px;
+ }
+ 
+ #Filmes .card .imgbx{
+     position: relative;
+     top: -60px;
+     left: 50px;
+ }
+ 
+ .data{
+     background-color: rgba(143, 143, 143, 0.5);
+     border: 1px solid white;
+     color: white;
+     position: absolute;
+     font-size: 16px;
+     left: 50px;
+     top: 220px;
+     font-style: italic;
+ }
+ 
+ .imgbx img{
+     height: 250px;
+ }
+ 
+ #Filmes .card .content{
+     margin-top:  -160px;
+     visibility: 0;
+     opacity: 0;
+     transition: 0.5s;
+ }
+ 
+ #Filmes .card:hover .content{
+     visibility: visible;
+     opacity: 1;
+     margin-top: -60px;
+     transition-delay: 0.5s;
+ }
+ 
+ .carousel-inner{
+     transition: 0.1s;
+ }
+ 
+.d-block{
+    height: 450px;
+}
+ 
+.botao{
+    background-color: #1b1a17;
+    border: 1px black;
+    color: white;
+    margin: 5% 5% 5% 20%;
+    text-align: center;
+    padding: 3%;
+}
+ 
+ .botao:hover{
+     background-color: #ff8303;
+     border: transparent;
+     color: black;
+ }
+ 
+ @media (max-width:800px){
+     .d-block{
+         height: 80%;
+     }
+ 
+     .carousel-control-next{
+         display: none;
+     }
+ 
+     .carousel-control-prev{
+         display: none;
+     }
+     
+     #Filmes .card:hover{
+         height: 750px;
+     }
+ }
