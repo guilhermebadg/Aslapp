@@ -39,6 +39,6 @@ function multiplicar(){
 
     document.getElementById("SubTotal").innerText = SubTotal.toFixed(2) 
     document.getElementById("Desconto").innerText = Desconto.toFixed(2)
-    document.getElementById("Total").innerText = Total
+    document.getElementById("Total").innerText = Total.tofixed(2)
 }
 
