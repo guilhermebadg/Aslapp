@@ -8,7 +8,7 @@
 * Otavio Martins da Silva
 
 # link do site:
-https://guilhermebadg.github.io/aslappnovo-/
+https://guilhermebadg.github.io/Aslapp/
 
 # Softwares utilizados:
 * HTML5;
